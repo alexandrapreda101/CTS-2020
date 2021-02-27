@@ -10,12 +10,15 @@ public class Zoo {
 	public Zoo(Zookeeper zookeeper, List<Animal> lista) {
 		super();
 		this.zookeeper = zookeeper;
+		
 		this.lista = lista;
 	}
 	
+	
 	public Zoo() {
 		super();
-		this.zookeeper= new Zookeeper("Ion");
+		
+		this.zookeeper= new Zookeeper("Maria");
 		this.lista = new ArrayList();
 	}
 	
