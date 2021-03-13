@@ -27,16 +27,18 @@ public class Angajat extends Aplicant{
 		super();
 		
 	}
-	
-	
+
+
 	@Override
 	public String toString() {
-		return "Angajat: Nume=" + nume + ", Prenume=" + prenume
-				+ ", Varsta=" + varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nr_proiecte + ", DenumireProiect="
-				+ Arrays.toString(denumireProiect) + "Ocupatie=" + ocupatie + ", salariu=" + salariu;
+		final StringBuilder sb = new StringBuilder("Angajat{");
+		sb.append(super.toString());
+		sb.append("ocupatie='").append(ocupatie).append('\'');
+		sb.append(", salariu=").append(salariu);
+		sb.append('}');
+		return sb.toString();
 	}
-	
-	
+
 	public int finantare() {
 		int s=10;
 		// TODO Auto-generated method stub

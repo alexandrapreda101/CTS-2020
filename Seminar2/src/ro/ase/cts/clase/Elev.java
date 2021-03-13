@@ -18,15 +18,18 @@ public class Elev extends Aplicant{
 	public void setTutore(String tutore) {
 		this.tutore = tutore;
 	}
-	
-	
+
+
 	@Override
 	public String toString() {
-		return "Elev: Nume=" + nume + ", Prenume=" + prenume + ", Varsta="
-				+ varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nr_proiecte  + ", DenumireProiect="
-				+ Arrays.toString(denumireProiect) + "Clasa=" + clasa + ", Tutore=" + tutore;
+		final StringBuilder sb = new StringBuilder("Elev{");
+		sb.append(super.toString());
+		sb.append("clasa=").append(clasa);
+		sb.append(", tutore='").append(tutore).append('\'');
+		sb.append('}');
+		return sb.toString();
 	}
-	
+
 	public Elev() {
 		super();
 	}
