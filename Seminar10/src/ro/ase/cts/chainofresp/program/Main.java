@@ -14,6 +14,7 @@ public class Main {
         contCurent.setCont(contCredit);
         contCredit.setCont(contEconomii);
 
+
         contCurent.realizeazaPlata(150);
         contCurent.realizeazaPlata(500);
         contCurent.realizeazaPlata(300);
