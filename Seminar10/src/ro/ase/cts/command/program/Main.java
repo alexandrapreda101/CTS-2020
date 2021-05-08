@@ -13,8 +13,5 @@ public class Main {
         managerComenzi.executaComanda();
         managerComenzi.executaComanda();
 
-
-
-
     }
 }

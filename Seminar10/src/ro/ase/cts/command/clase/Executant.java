@@ -10,7 +10,7 @@ public class Executant {
 
      public void constituire(float suma){
          this.sold = suma;
-         System.out.println("S-a constituit contul cu suma" +this.sold);
+         System.out.println("S-a constituit contul cu suma " +this.sold);
      }
      public void depunere(float suma){
          this.sold += suma;

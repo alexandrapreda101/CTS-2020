@@ -7,12 +7,8 @@ public class ManagerComenzi {
 
     private List<ComandaAbstracta> listaComenzi;
 
-    public ManagerComenzi(List<ComandaAbstracta> listaComenzi) {
-        this.listaComenzi = new ArrayList<ComandaAbstracta>();
-    }
-
     public ManagerComenzi() {
-
+        this.listaComenzi = new ArrayList<ComandaAbstracta>();
     }
 
     public void invocaComanda(ComandaAbstracta comandaAbstracta) {
