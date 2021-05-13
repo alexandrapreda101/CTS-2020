@@ -11,9 +11,9 @@ public class Main {
         System.out.println(fundas.toString());
 
         SingletonFactory singletonFactory = SingletonFactory.getInstance();
-        Jucator portar2 = singletonFactory.getJucator(TipJucator.PORTAR,"Mihai",23);
-        Jucator fundas2 = singletonFactory.getJucator(TipJucator.FUNDAS,"Andrei",24);
-        System.out.println(portar.toString());
-        System.out.println(fundas.toString());
+        Jucator portar2 = singletonFactory.getJucator(TipJucator.PORTAR,"Ionut",23);
+        Jucator fundas2 = singletonFactory.getJucator(TipJucator.FUNDAS,"Gabriel",24);
+        System.out.println(portar2.toString());
+        System.out.println(fundas2.toString());
     }
 }
