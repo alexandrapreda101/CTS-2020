@@ -13,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
         Leasing leasing = new Leasing("Andrei",20000);
-        //leasing.creeazaLeasing();
+        //creeazaCredit(leasing);
 
         AdapterCredit adapter = new AdapterCredit(leasing);
         creeazaCredit(adapter);
