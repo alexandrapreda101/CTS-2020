@@ -11,5 +11,6 @@ public class Main {
         ProxyRezervare proxyRezervare = new ProxyRezervare(operatorRezervare,4);
         proxyRezervare.rezerva(2);
         proxyRezervare.rezerva(4);
+
     }
 }

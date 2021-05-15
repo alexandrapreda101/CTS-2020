@@ -14,6 +14,7 @@ public class ManagerComenzi {
     public void invocaComanda(ComandaAbstracta comandaAbstracta) {
         listaComenzi.add(comandaAbstracta);
     }
+
     public void executaComanda(){
         if(listaComenzi.size() > 0){
             listaComenzi.get(0).executa();
