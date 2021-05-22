@@ -41,5 +41,59 @@ public class StudentTests {
         student.adaugaNota(nota);
         assertEquals(nota,student.getNota(0));
     }
+    @Test
+    public void testDimensiuneLista(){
+        Student student = new Student();
+        student.adaugaNota(10);
+        student.adaugaNota(9);
+        assertEquals(2, student.getNote().size());
+    }
+    @Test
+    public void testCalculeazaMedie(){
+        Student student = new Student();
+        student.adaugaNota(10);
+        student.adaugaNota(9);
+        assertEquals(9.5f,student.calculeazaMedie(),0.1);
+    }
+    @Test
+    public void testStudentCuRestanta(){
+        Student student = new Student();
+        student.adaugaNota(4);
+        assertTrue(student.areRestante());
+    }
+    @Test
+    public void testStudentFaraRestanta(){
+        Student student = new Student();
+        student.adaugaNota(10);
+        assertFalse(student.areRestante());
+    }
+    @Test
+    public void testGetNotaIndexInvalid(){
+        Student student = new Student();
+        student.adaugaNota(7);
+   //1
+        try{
+            //2
+            int nota = student.getNota(-1);
+            //3 -nu se ajunge
+            fail("Nu trebuia sa ajunga aici, metoda nu arunca exceptie");
+        }
+        catch (IndexOutOfBoundsException exception){
+            //4
+        }
+        catch (Exception e){
+            //5-nu se ajunge
+            fail("Tipul exceptiei aruncate nu este corect");
+        }
+        //6
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void testGetNotaIndexInvalidJunit4(){
+        Student student = new Student();
+        student.adaugaNota(9);
+
+        int nota = student.getNota(-1);
+    }
 
 }
